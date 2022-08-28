@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jarvis Design</title>
+  <script src="https://kit.fontawesome.com/8b3f0bb0a1.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="upperLeft">
+      <div class="upperLine">
+        <div id="time"></div>
+        <i id="calendar" class="far fa-calendar-alt fa-xs"></i>
+      </div>
+      <div id="date"></div>
+    </div>
+    <div class="searchBox">
+      <input class="searchText" type="text" placeholder="Pesquisa Google">
+      <i id="lupa" class="fas fa-search"></i>
+    </div>
+  </header>
+
+  <main>
+    <div>O que você tem para fazer hoje?</div>
+    <div class="writeSpace">
+      <input id="writeHere" type="text" placeholder="Escreva aqui" autofocus>
+      <button id="moveButton" onclick="moveValue()"></button>
+    </div>
+  </main>
+
+  <div class="menuAfazeres"></div>
+  <div class="menuPointer"></div>
+
+  <div class="infoPointer"></div>
+  <div class="infoBox">Site em construção. Em breve no ar!</div>
+
+  <footer>
+    <div class="bottomLeft">
+      <div>Afazeres</div>
+      <div id="afazeresLenght">[0]</div>
+    </div>
+    <i id="infoButton" class="fas fa-info-circle fa-lg"></i>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
